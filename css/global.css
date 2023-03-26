@@ -424,6 +424,13 @@ input:hover {
   color: var(--color-white);
 }
 
+@media (max-width:1024px) {
+  .up-btn{
+    right: 30px;
+    bottom: 100px;
+  }
+}
+
 @media (max-width: 992px) {
   .up-btn{
     right: 20px;
