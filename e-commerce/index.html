@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerse</title>
+
+  <!-- Css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="preloader" class="spinner">
+    <svg class="load" viewBox="25 25 50 50">
+      <circle class="loader" r="20" cy="50" cx="50"></circle>
+    </svg>
+  </div>
+
+  <!-- Navbar -->
+  <div class="container">
+    <header class="blog-header lh-1 py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#">Trend Shop</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <div class="group-search">
+            <svg class="icon-search" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+            <input placeholder="Ara" type="search" class="input">
+          </div>
+          <a class="btn btn-sm btn-outline-secondary" href="#"><i class="fas fa-sign-in"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 link-secondary" href="#">Yeni Ürünler</a>
+        <a class="p-2 link-secondary" href="#">Çok Satanlar</a>
+        <a class="p-2 link-secondary" href="#">Üst Giyim</a>
+        <a class="p-2 link-secondary" href="#">Alt Giyim</a>
+        <a class="p-2 link-secondary" href="#">Aksesuar</a>
+        <a class="p-2 link-secondary" href="#">Koleksiyonlar</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Slider -->
+  <div class="wrapper">
+    <input checked type=radio name="slider" id="slide1" />
+    <input type=radio name="slider" id="slide2" />
+    <input type=radio name="slider" id="slide3" />
+    <input type=radio name="slider" id="slide4" />
+    <input type=radio name="slider" id="slide5" />
+
+    <div class="slider-wrapper">
+      <div class=inner>
+        <article>
+          <img src="assets/carousel-1.png" />
+        </article>
+
+        <article>
+          <img src="assets/carousel-2.png" />
+        </article>
+
+        <article>
+          <img src="assets/carousel-3.png" />
+        </article>
+
+        <article>
+          <img src="assets/carousel-4.png" />
+        </article>
+
+        <article>
+          <img src="assets/carousel-5.png" />
+        </article>
+      </div>
+      <!-- .inner -->
+    </div>
+    <!-- .slider-wrapper -->
+
+    <div class="slider-prev-next-control">
+      <label for=slide1></label>
+      <label for=slide2></label>
+      <label for=slide3></label>
+      <label for=slide4></label>
+      <label for=slide5></label>
+    </div>
+    <!-- .slider-prev-next-control -->
+
+    <div class="slider-dot-control">
+      <label for=slide1></label>
+      <label for=slide2></label>
+      <label for=slide3></label>
+      <label for=slide4></label>
+      <label for=slide5></label>
+    </div>
+    <!-- .slider-dot-control -->
+  </div>
+
+  <!-- Offer-Cards -->
+  <section class="offer-cards">
+
+    <div class="container">
+
+      <br>
+
+      <h3 class="offer-head">Süper Fiyatlar</h3>
+
+      <br>
+
+      <div class="row carousel-offer">
+
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-1.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-2.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-3.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-4.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-5.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-6.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-6.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="col offer-card">
+          <span class="discount">50%</span>
+          <img class="offer" src="assets/discount-6.png" alt="">
+          <div class="offer-info">
+            <span class="offer-price">149.99TL</span>
+            <p>Product details</p>
+            <hr style="border: 1px solid #89BDD3;">
+            <button class="cta">
+              <span class="hover-underline-animation"> Hemen Al </span>
+              <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10" id="Path_10"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="left left-offer"><i class="fa-solid fa-arrow-left"></i>Geri</div>
+        <div class="right right-offer">İleri<i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- Sale-Card -->
+  <section>
+    <div class="container">
+
+      <h2 class="offer-head">Ürünlerimiz</h2>
+
+      <br>
+
+      <h6 class="left-head">Üst Giyim</h6>
+
+      <div class="row carousel-sale clothing-1">
+
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-2.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-4.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-5.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-6.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/discount-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="left clothing-1-left"><i class="fa-solid fa-arrow-left"></i>Geri</div>
+        <div class="right clothing-1-right">İleri<i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <br><br>
+
+      <h6 class="left-head">Alt Giyim</h6>
+
+      <div class="row carousel-sale clothing-2">
+
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/bottom-clothes-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="left clothing-2-left"><i class="fa-solid fa-arrow-left"></i>Geri</div>
+        <div class="right clothing-2-right">İleri<i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+      <br><br>
+
+      <h6 class="left-head">Aksesuar</h6>
+
+      <div class="row carousel-sale clothing-3">
+
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-1.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-2.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-4.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col sale-card">
+          <div class="sale-card-img"><img src="assets/accessory-3.png" alt=""></div>
+          <span class="cargo">Ücretsiz Kargo</span>
+          <div class="sale-card-info">
+            <p class="sale-text-body">Product details</p>
+          </div>
+          
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div class="sale-card-footer">
+            <span class="sale-text-title">299.99TL</span>
+            <div class="sale-card-button">
+              <svg class="sale-svg-icon" viewBox="0 0 20 20">
+                <path
+                  d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                </path>
+                <path
+                  d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                </path>
+                <path
+                  d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="left clothing-3-left"><i class="fa-solid fa-arrow-left"></i>Geri</div>
+        <div class="right clothing-3-right">İleri<i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Hakkımızda</h6>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Suscipit commodi sit modi dolor nisi non enim quisquam quis a nobis!
+            Et, reiciendis possimus! Hic sed consequatur modi facilis? Cumque, nisi!
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <!-- <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul> -->
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6 class="footer-head">KATEGORİLER</h6>
+          <ul class="footer-links">
+            <li><a href="#">Yeni Ürünler</a></li>
+            <li><a href="#">Çok Satanlar</a></li>
+            <li><a href="#">Üst Giyim</a></li>
+            <li><a href="#">Alt Giyim</a></li>
+            <li><a href="#">Aksesuar</a></li>
+            <li><a href="#">Koleksiyonlar</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p>Copyright &copy
+            <span id="year"></span>
+            <a class="link" target="_blank" href="http://webtasarimcim.online/?i=2">Adem Karagöz</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="up" class="up-btn">
+    <a href="#top" class="up"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
